@@ -1,0 +1,23 @@
+{
+  "name": "ai-commit-summarizer",
+  "version": "1.0.0",
+  "description": "A GitHub Action that summarizes commits based on a flexible prompt",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "github-action",
+    "commit-summary",
+    "ai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.11.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.4"
+  }
+}
