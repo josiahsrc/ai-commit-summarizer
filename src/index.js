@@ -216,6 +216,10 @@ async function run() {
       prompt,
     });
 
+    console.log('--- Commit Summary ---\n');
+    console.log(summary);
+    console.log('\n--- End of Summary ---');
+
     core.setOutput('summary', summary);
     await core.summary.addRaw(`## AI Generated Commit Summary\n\n${summary}`).write();
     core.info('Commit summary generated successfully.');
